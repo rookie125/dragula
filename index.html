@@ -34,6 +34,33 @@ dragula([document.getElementById(left), document.getElementById(right)]);
       </code>
     </pre>
   </div>
+
+  <div class='parent'>
+    <label for='hy'>Move stuff between these two containers. Get and set direction dynamically.</label>
+    <div class='wrapper direction-wrapper'>
+
+      <div id='left-direction' class='container' data-direction="horizontal">
+        <div>left item 1</div>
+        <div>left item 2</div>
+        <div>left item 3</div>
+        <div>left item 4</div>
+      </div>
+
+      <div id='right-direction' class='container' data-direction="vertical">
+        <div>right item 1</div>
+        <div>right item 2</div>
+        <div>right item 3</div>
+        <div>right item 4</div>
+      </div>
+
+    </div>
+    <pre>
+      <code>
+dragula([document.getElementById(left), document.getElementById(right)]);
+      </code>
+    </pre>
+  </div>
+
   <div class='parent'>
     <label for='hy'>There are plenty of events along the lifetime of a drag event. Check out <a href='https://github.com/bevacqua/dragula#drakeon-events'>all of them</a> in the docs!</label>
     <div class='wrapper'>

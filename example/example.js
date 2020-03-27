@@ -4,6 +4,12 @@ var crossvent = require('crossvent');
 var sortable = $('sortable');
 
 dragula([$('left-defaults'), $('right-defaults')]);
+dragula([$('left-direction'), $('right-direction')], {
+  copy: true,
+  direction: (item, container) => {
+    return container.getAttribute('data-direction') || 'horizontal';
+  }
+});
 dragula([$('left-copy'), $('right-copy')], { copy: true });
 dragula([$('left-events'), $('right-events')])
   .on('drag', function (el) {
